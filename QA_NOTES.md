@@ -1,6 +1,13 @@
-# QA summary · LifeQuest v1.0
+# QA summary · LifeQuest v1.1
 
-Verified locally on October 23, 2026 with headless Chromium.
+Living Storybook integration verified locally on October 28, 2026 with headless Chromium. The v1.0 gameplay evidence below remains part of the regression baseline.
+
+## Living Storybook integration
+
+- Preserved all six v1.0 districts and all sixteen quests while adding one idempotent v1.1 map layer, one room layer per district, guide/mood data, progress feedback, and capped rewards.
+- Verified six desktop district columns and two phone columns, six anchored destinations, four residents plus one service vehicle, Future District atmosphere, and Sam's distinct guide state.
+- Verified zero external requests, clean page-error navigation, saved reduced-motion behavior, 390-pixel map containment, and a 44-pixel Ask Pixel touch target.
+- The focused test initially caught Ask Pixel at 33 pixels high; the v1.1 CSS repair raised it to the required 44 pixels and the test passed on rerun.
 
 ## Automated gameplay
 

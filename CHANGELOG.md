@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.1 · Living Storybook
+
+- Forward-ported the Living Storybook motion and feedback layer onto v1.0 without removing any of its six districts, sixteen quests, 1550 XP, sixteen toolkits, or save compatibility.
+- Added layered Crossroads sky light, water shimmer, window warmth, birds, foliage, four residents, a service vehicle, anchored destinations, and Pixel patrol choreography.
+- Added district-aware atmosphere and shallow fine-pointer depth to Money District, Signal Studio, Home Base, Career Tower, Wellness Center, and Future District.
+- Individualized Maya, Jace, André, Priya, Nia, Sam, and Pixel through guide/mood states and restrained whole-portrait movement without face warping.
+- Added persistent district progress marks, real-value XP feedback, one-time badge emphasis, view transitions, and a capped three-beat reward sequence.
+- Unified Ambient off, system reduced motion, in-game reduced motion, hidden-page pausing, and coarse-pointer behavior; generated layers are idempotent, `aria-hidden`, and non-interactive.
+- Removed the Google Fonts request so the standalone build makes no external requests, and repaired Ask Pixel to meet the 44-pixel phone target.
+- Added `qa/living-storybook-test.js` while retaining the full sixteen-quest and focused district regression suites.
+- No Vercel deployment, paid change, account integration, or production promotion was performed.
+
 ## v1.0 · All of Crossroads
 
 - Opened the Wellness Center (Nia Carter, health navigator) and the Future District (Sam Okafor, future planner): map pins, district cards, location pages with illustrated rooms, ambient props, mentor cards, and safety notes.

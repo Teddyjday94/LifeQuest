@@ -1,10 +1,10 @@
-# LifeQuest · Crossroads local v1.0
+# LifeQuest · Crossroads v1.1 · Living Storybook
 
-**Local work only:** No Vercel deployment, GitHub push, paid service, or production change was made.
+**Release boundary:** This version may be stored in GitHub, but no Vercel deployment, paid service, account integration, or production promotion is part of this release.
 
 ## Play
 
-Open `index.html` in a modern browser, or serve this folder locally for the smoothest download behavior. The illustrated artwork is embedded. Progress, mission choices, and practice notes stay in this browser under the existing LifeQuest save key. No account is needed.
+Open `index.html` in a modern browser, or serve this folder locally for the smoothest download behavior. The illustrated artwork is embedded and the game makes no external font, library, media, analytics, or API requests. Progress, mission choices, and practice notes stay in this browser under the existing LifeQuest save key. No account is needed.
 
 New players get a three-step welcome tour from Pixel after picking a name. The full **How to play** guide is always one tap away in the top navigation.
 
@@ -25,6 +25,16 @@ The in-game guide also covers the anatomy of a quest screen, controls and keyboa
 - Offer Decoder · Interview Ready — Career Tower
 - **NEW: Insurance Decoder · Appointment Ready — Wellness Center** (guide: Nia Carter)
 - **NEW: Compound Curve · Goal Mapper — Future District** (guide: Sam Okafor)
+
+## Living Storybook visual system
+
+v1.1 carries the v0.10 Living Storybook work forward without replacing v1.0's six districts or sixteen quests.
+
+- Crossroads adds changing sky light, water shimmer, window warmth, distant birds, restrained foliage, four asynchronously routed residents, one service vehicle, destination anchors, and a longer Pixel patrol.
+- Every district receives its own light and prop rhythm. The newer Future District uses slow observatory/page movement, and Sam has a distinct guide identity alongside Maya, Jace, André, Priya, Nia, and Pixel.
+- Feedback, progress marks, XP changes, new badges, view transitions, and rewards share a quieter tactile language. Reward particles are capped and removed after the sequence.
+- Ambient off, operating-system reduced motion, in-game reduced motion, hidden-page pausing, and coarse-pointer guards stop loops, particles, travel, and parallax without hiding state feedback.
+- Decorative layers are `aria-hidden`, non-focusable, and inserted once per rendered view. Phone layouts retain two district columns, no horizontal overflow, and a 44-pixel Ask Pixel target.
 
 ## Wellness Center and Future District
 
@@ -73,6 +83,7 @@ Set `LIFEQUEST_CHROME` to your Chrome/Chromium path if it is not the Windows def
 - `qa/career-howto-test.js` — welcome tour, How to Play, quest help, both Career Tower quests at 390 × 844, touch sizing, overflow, downloads, persistence, and v0.7 save migration.
 - `qa/smoke-test.js` — all sixteen quests on desktop (1550 XP, sixteen toolkits), mobile Views vs. Value flow, and v0.6 save migration.
 - `qa/home-base-test.js` — both Home Base quests on a phone viewport.
+- `qa/living-storybook-test.js` — all six district atmospheres, Sam's guide state, map actor caps, layer idempotency, zero external requests, reduced motion, responsive 6/2-column district strips, phone overflow, and Ask Pixel touch sizing.
 - `qa/capture-previews.js` — regenerates the included screenshots.
 
 See `QA_NOTES.md` for verified results.
