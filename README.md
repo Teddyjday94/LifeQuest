@@ -1,4 +1,4 @@
-# LifeQuest · Crossroads v1.1 · Living Storybook
+# LifeQuest · Crossroads v1.2 · Illustrated Crossroads
 
 **Release boundary:** This version may be stored in GitHub, but no Vercel deployment, paid service, account integration, or production promotion is part of this release.
 
@@ -25,6 +25,10 @@ The in-game guide also covers the anatomy of a quest screen, controls and keyboa
 - Offer Decoder · Interview Ready — Career Tower
 - **NEW: Insurance Decoder · Appointment Ready — Wellness Center** (guide: Nia Carter)
 - **NEW: Compound Curve · Goal Mapper — Future District** (guide: Sam Okafor)
+
+## v1.2 illustrated rooms
+
+Home Base, Career Tower, Wellness Center, and Future District rooms are layered SVG illustrations built into `index.html` (no downloads). Hotspots are pinned to the art; on phones each room pans sideways at full height. Motion uses transform and opacity only so it stays smooth, and all motion settings still apply.
 
 ## Living Storybook visual system
 

@@ -6,7 +6,7 @@ const { chromium } = require('playwright');
 const BASE_URL = process.env.LIFEQUEST_URL || pathToFileURL(path.join(__dirname, '..', 'index.html')).href;
 const CHROME = process.env.LIFEQUEST_CHROME || 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 const STORE_KEY = 'lifequest.crossroads.prototype.v1';
-const OUT = path.join(__dirname, '..');
+const OUT = path.join(__dirname, '..', 'docs', 'previews');
 
 async function click(page, selector) {
   const target = page.locator(selector).filter({ visible: true }).first();

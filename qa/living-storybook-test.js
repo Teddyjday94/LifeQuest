@@ -47,7 +47,7 @@ async function returnToMap(page) {
     page.on('pageerror', error => pageErrors.push(error.message));
     await seed(page);
 
-    assert.equal(await page.title(), 'LifeQuest v1.1 | Living Storybook · All of Crossroads');
+    assert.equal(await page.title(), 'LifeQuest v1.2 | Illustrated Crossroads');
     assert.equal(await page.locator('.district-card').count(), 6, 'all six v1.0 districts must remain');
     assert.equal(await page.locator('.below-town').evaluate(element => getComputedStyle(element).gridTemplateColumns.split(/\s+/).length), 6, 'desktop district strip should use six columns');
     assert.equal(await page.locator('.map-ambient-v10').count(), 1, 'living-world scenery should insert once');

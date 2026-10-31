@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.2 · Illustrated Crossroads
+
+- Replaced the flat CSS-shape rooms in Home Base, Career Tower, Wellness Center, and Future District with layered, hand-built SVG illustrations (lighting, depth, props, plants, skylines, and small ambient details). They are embedded in `index.html`, so the game still makes no external requests. Optional painted art in `art/` still takes over when present, and only after it loads.
+- Location banners now open on each district's own building from the town painting (Money District, Home Base, Wellness gardens). The Future District, which has no painted exterior, uses its observatory illustration.
+- Smoother motion: removed the slow image zoom that fought the room parallax, and moved Signal Studio and Money Lab effects off animated blur filters, blend modes, box-shadows, and stepped timing onto transform/opacity only. Guide portraits now breathe with one gentle vertical motion instead of sub-pixel wobble. Every existing motion switch still stops all of it.
+- Cleaner controls: one consistent button system (solid fills, soft depth, clear hover/press/focus states), calm pill-style room hotspots, frosted ambient-prop discs with a light ripple, and softer map pins.
+- Hotspots and props stay pinned to the illustrated scenes at any size. On phones the rooms show at full height and pan sideways instead of being cropped. Fixed the Signal Studio recording-light prop covering the Brand Builder label.
+- `qa/capture-previews.js` now writes into `docs/previews/`; previews refreshed. All seven QA suites pass.
+
 ## v1.1 · Living Storybook
 
 - Forward-ported the Living Storybook motion and feedback layer onto v1.0 without removing any of its six districts, sixteen quests, 1550 XP, sixteen toolkits, or save compatibility.
